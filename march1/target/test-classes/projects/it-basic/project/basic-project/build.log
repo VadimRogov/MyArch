@@ -1,0 +1,98 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< archetype.it:basic-project >---------------------
+[INFO] Building basic-project 0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ basic-project ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/xlis/IdeaProjects/mvn5/march1/target/test-classes/projects/it-basic/project/basic-project/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ basic-project ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/xlis/IdeaProjects/mvn5/march1/target/test-classes/projects/it-basic/project/basic-project/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] Source option 7 is no longer supported. Use 8 or later.
+[ERROR] Target option 7 is no longer supported. Use 8 or later.
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.384 s
+[INFO] Finished at: 2023-07-11T19:33:30+03:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+[WARNING] Plugin validation issues were detected in 2 plugin(s)
+[WARNING] 
+[WARNING]  * org.apache.maven.plugins:maven-compiler-plugin:3.8.0
+[WARNING]  * org.apache.maven.plugins:maven-resources-plugin:3.0.2
+[WARNING] 
+[WARNING] For more or less details, use 'maven.plugin.validation' property with one of the values (case insensitive): [BRIEF, DEFAULT, VERBOSE]
+[WARNING] 
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile (default-compile) on project basic-project: Compilation failure: Compilation failure: 
+[ERROR] Source option 7 is no longer supported. Use 8 or later.
+[ERROR] Target option 7 is no longer supported. Use 8 or later.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile (default-compile) on project basic-project: Compilation failure
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:347)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:330)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:213)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:175)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:76)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:163)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:160)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:910)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:578)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:283)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:226)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:407)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:348)
+Caused by: org.apache.maven.plugin.compiler.CompilationFailureException: Compilation failure
+    at org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute (AbstractCompilerMojo.java:1215)
+    at org.apache.maven.plugin.compiler.CompilerMojo.execute (CompilerMojo.java:188)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:342)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:330)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:213)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:175)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:76)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:163)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:160)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:910)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:578)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:283)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:226)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:407)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:348)
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
